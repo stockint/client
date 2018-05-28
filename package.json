@@ -1,0 +1,28 @@
+{
+  "name": "@stockint/client",
+  "version": "0.1.0",
+  "description": "StockInt client library.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/stockint/client",
+  "author": "Simon Mika <simon@mika.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.3",
+    "jest": "^23.0.1",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "prebuild": "tslint --config .vscode/tslint.json --project tsconfig.json",
+    "build": "tsc -p ./",
+    "test": "jest --config jest.json --coverage",
+    "test.watch": "jest --config jest.json --coverage --watch",
+    "clean": "rm -rf dist node_modules coverage"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
