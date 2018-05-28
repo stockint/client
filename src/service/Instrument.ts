@@ -12,10 +12,10 @@ export interface Instrument extends Resource {
 	readonly isin: string
 	readonly list: string
 	readonly currency: string
-	readonly depth: string | Depth
-	readonly prices: string | ReadonlyArray<Price>
-	readonly returns: string | Returns
-	readonly statistics: string | Statistics
-	readonly status: string | Status
-	readonly trades: string | ReadonlyArray<Trade>
+	readonly depth: string
+	readonly prices: string
+	readonly returns: string
+	readonly statistics: string
+	readonly status: string
+	readonly trades: string
 }
