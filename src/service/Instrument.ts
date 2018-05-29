@@ -1,10 +1,4 @@
 import { Resource } from "./Resource"
-import { Depth } from "./Depth"
-import { Price } from "./Price"
-import { Returns } from "./Returns"
-import { Statistics } from "./Statistics"
-import { Status } from "./Status"
-import { Trade } from "./Trade"
 
 export interface Instrument extends Resource {
 	readonly name: string
